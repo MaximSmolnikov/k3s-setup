@@ -1,0 +1,16 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: rancher
+  namespace: kube-system
+spec:
+  chart: rancher
+  repo:  https://releases.rancher.com/server-charts/stable
+  targetNamespace: cattle-system
+  set:
+    namespace: cattle-system
+    hostname: k3s 
+    replicas: 1
+    certmanager.version: 0.15.1
+  
+ 
