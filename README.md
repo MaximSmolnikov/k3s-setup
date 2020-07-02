@@ -1,4 +1,4 @@
-#Установка k3s + rancher
+# Установка k3s + rancher
 1. Запуск скрипта установки. 
      ```shell script
      curl -sfL https://get.k3s.io | sh -s - --disable metrics-server,traefik --write-kubeconfig-mode 777 --node-ip 192.168.56.117 --node-external-ip 192.168.56.117
@@ -28,8 +28,9 @@
      kubectl create namespace cattle-system
      kubectl apply -f rancher-helm.yml
      ```
+____
 
-#####Полезные команды:
+### Полезные команды:
 * Удаление кластера
      ```shell script
       /usr/local/bin/k3s-uninstall.sh
