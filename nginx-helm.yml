@@ -5,5 +5,5 @@ metadata:
   namespace: kube-system
 spec:
   chart: ingress-nginx
-  repo: https://github.com/kubernetes/ingress-nginx
+  repo: https://kubernetes.github.io/ingress-nginx
   targetNamespace: ingress-nginx
